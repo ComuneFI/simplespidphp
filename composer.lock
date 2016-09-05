@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dc5b4a2b476356b610b244f6bc4d9672",
-    "content-hash": "f60473b91917b175ca8e29643bcf91c2",
+    "hash": "91c38ce8e273bd2f5992e9f3c031c00e",
+    "content-hash": "187b66e1f2426c27b163d93d04f15008",
     "packages": [
         {
             "name": "dev4pa/saml2",
