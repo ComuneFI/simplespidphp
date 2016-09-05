@@ -1,12 +1,17 @@
-SimpleSAMLphp
+SimpleSpidphp
 =============
-[![Build Status](https://travis-ci.org/simplesamlphp/simplesamlphp.svg?branch=master)]
-(https://travis-ci.org/simplesamlphp/simplesamlphp) [![Coverage Status](https://img.shields.io/coveralls/simplesamlphp/simplesamlphp.svg)] 
-(https://coveralls.io/r/simplesamlphp/simplesamlphp)
-
-This is the official repository of the SimpleSAMLphp software.
+This is a Fork of SimpleSAMLphp
 
 * [SimpleSAMLphp homepage](https://simplesamlphp.org)
 * [SimpleSAMLphp Downloads](https://simplesamlphp.org/download)
 
-Please, [contribute](CONTRIBUTE.md)!
+Usage
+-----
+
+* Install with [Composer](https://getcomposer.org/doc/00-intro.md), run the following command in your project:
+
+```bash
+git clone https://github.com/dev4pa/simplespidphp.git
+cd simplespidphp
+composer install
+```
