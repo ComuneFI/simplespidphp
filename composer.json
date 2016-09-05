@@ -7,6 +7,10 @@
     "license": "LGPL-2.1",
     "authors": [
         {
+            "name": "Andrea Manzi",
+            "email": "manzolo@libero.it"
+        },
+        {
             "name": "Andreas Åkre Solberg",
             "email": "andreas.solberg@uninett.no"
         },
@@ -17,10 +21,6 @@
         {
             "name": "Jaime Perez",
             "email": "jaime.perez@uninett.no"
-        },
-        {
-            "name": "Andrea Manzi",
-            "email": "manzolo@libero.it"
         }
     ],
     "autoload": {
