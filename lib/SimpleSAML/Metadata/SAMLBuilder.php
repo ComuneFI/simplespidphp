@@ -368,6 +368,12 @@ class SimpleSAML_Metadata_SAMLBuilder
                 }
 
                 $t->index = $ep['index'];
+                /*COMUNE DI FIRENZE*/
+                /* SPID require isDefault attribute in metadata on first endponit, but i didn't find a solution to pass this entdpoint parameter */
+                if (isset($ep['isDefault'])) {
+                    $t->isDefault = $ep['isDefault'];
+                }
+               /*COMUNE DI FIRENZE*/
             }
 
             $ret[] = $t;

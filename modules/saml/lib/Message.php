@@ -439,9 +439,14 @@ class sspmod_saml_Message {
 
 		/* Shoaib - setting the appropriate binding based on parameter in sp-metadata defaults to HTTP_POST */
 		$ar->setProtocolBinding($protbind);
+		/*COMUNE DI FIRENZE*/
+		$issuer = new \SAML2\Issuer($spMetadata->getString('entityid'));
+		$issuer->setFormat("urn:oasis:names:tc:SAML:2.0:nameid-format:entity");
+		$issuer->setNameQualifier($spMetadata->getString('entityid'));
+		$ar->setIssuer($issuer);
+		/*COMUNE DI FIRENZE*/
 
-		$ar->setIssuer($spMetadata->getString('entityid'));
-
+                
 		$ar->setAssertionConsumerServiceIndex($spMetadata->getInteger('AssertionConsumerServiceIndex', NULL));
 		$ar->setAttributeConsumingServiceIndex($spMetadata->getInteger('AttributeConsumingServiceIndex', NULL));
 
