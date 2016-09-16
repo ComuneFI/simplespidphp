@@ -31,7 +31,7 @@
     },
     "require": {
         "php": ">=5.3",
-        "dev4pa/saml2": "3.0",
+        "simplesamlphp/saml2": "dev-master#381bb70b6578e948a8a3ef8854aff700bdf38fad",
         "robrichards/xmlseclibs": "~2.0",
         "whitehat101/apr1-md5": "~1.0",
         "twig/twig": "~1.0"
