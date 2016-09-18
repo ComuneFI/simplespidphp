@@ -15,3 +15,23 @@ git clone https://github.com/dev4pa/simplespidphp.git
 cd simplespidphp
 composer install
 ```
+
+* Creazione cartelle di lavoro per logs e certificati
+```bash
+mkdir log
+chmod 777 -R log
+mkdir cert
+```
+
+* Creazione di un proprio certificato applicativo per la generazione dei metadati da inviare ad AGID
+```bash
+#Creazione dei certificati per il proprio SP
+openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out cert/saml.crt -keyout cert/saml.pem
+```
+
+
+* Copia dei file di template per il file di configurazione si simplesamlphp e il file contenente i servizi da esporre con SPID
+```bash
+cp ../config-template/authsources.php.spid config/authsources.php
+cp ../config-template/config.php config/config.php
+```
