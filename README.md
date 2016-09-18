@@ -42,6 +42,8 @@ I files generati da questo comando devono essere configurati nel file config/aut
 
 * Copia dei file di template per il file di configurazione di simplesamlphp e il file contenente i servizi da esporre con SPID
 ```bash
-cp ../config-template/config.php config/config.php
+cp ../config-template/config.php.spid config/config.php
 cp ../config-template/authsources.php.spid config/authsources.php
 ```
+Una volta copiati editarli in modo da personalizzare il proprio server e i propri servizi
+
