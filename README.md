@@ -29,8 +29,8 @@ openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out cert/saml.crt -ke
 ```
 
 
-* Copia dei file di template per il file di configurazione si simplesamlphp e il file contenente i servizi da esporre con SPID
+* Copia dei file di template per il file di configurazione di simplesamlphp e il file contenente i servizi da esporre con SPID
 ```bash
-cp ../config-template/authsources.php.spid config/authsources.php
 cp ../config-template/config.php config/config.php
+cp ../config-template/authsources.php.spid config/authsources.php
 ```
