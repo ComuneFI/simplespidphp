@@ -99,13 +99,17 @@ $enablematrix = array(
 
 
 $functionchecks = array(
+	'time'             => array('required', 'Date/Time Extension'),
 	'hash'             => array('required',  'Hashing function'),
 	'gzinflate'        => array('required',  'ZLib'),
 	'openssl_sign'     => array('required',  'OpenSSL'),
-	'simplexml_import_dom' => array('required', 'SimpleXML'),
 	'dom_import_simplexml' => array('required', 'XML DOM'),
 	'preg_match'       => array('required',  'RegEx support'),
+	'json_decode'      => array('required', 'JSON support'),
+	'class_implements' => array('required', 'Standard PHP Library (SPL)'),
+	'curl_init'        => array('optional', 'cURL (required if automatic version checks are used, also by some modules.'),
 	'mcrypt_module_open'=> array('optional',  'MCrypt (required if digital signatures or encryption are used)'),
+	'session_start'  => array('optional', 'Session Extension (required if PHP sessions are used)'),
 	'pdo_drivers'    => array('optional',  'PDO Extension (required if a database backend is used)'),
 	'memcache_debug' => array('optional', 'Memcache Extension (required if a Memcached backend is used)'),
 );
@@ -173,6 +177,7 @@ $t->data['links_federation'] = $links_federation;
 
 $t->data['enablematrix'] = $enablematrix;
 $t->data['funcmatrix'] = $funcmatrix;
+$t->data['requiredmap'] = array('recommended' => $t->noop('{core:frontpage:recommended}'));
 $t->data['version'] = $config->getVersion();
 $t->data['directory'] = dirname(dirname(dirname(dirname(__FILE__))));
 
