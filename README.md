@@ -27,6 +27,17 @@ mkdir cert
 ```bash
 openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out cert/saml.crt -keyout cert/saml.pem
 ```
+I files generati da questo comando devono essere configurati nel file authsources.php
+
+```
+    'nomeservizio-sp' => array(
+        'saml:SP',
+        'privatekey' => 'saml.pem',
+        'certificate' => 'saml.crt',
+        // The entity ID of this SP.
+        // Can be NULL/unset, in which case an entity ID is generated based on the metadata URL.
+        'entityID' => null,
+```
 
 
 * Copia dei file di template per il file di configurazione di simplesamlphp e il file contenente i servizi da esporre con SPID
