@@ -27,7 +27,7 @@ mkdir cert
 ```bash
 openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out cert/saml.crt -keyout cert/saml.pem
 ```
-I files generati da questo comando devono essere configurati nel file authsources.php
+I files generati da questo comando devono essere configurati nel file config/authsources.php
 
 ```
     'nomeservizio-sp' => array(
