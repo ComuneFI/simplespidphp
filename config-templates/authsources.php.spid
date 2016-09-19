@@ -57,19 +57,23 @@ $config = array(
           ), */
 
 
-        /* Parametri Manzolo */
-        /* al momento, almeno infocert non supporta SpidL2, poste si */
+        /* Impostare il livello di spid che si vuole (1,2,3)  per il servizio */
         'AuthnContextClassRef' =>
         array(
-            'urn:oasis:names:tc:SAML:2.0:ac:classes:SpidL1',
+            'urn:oasis:names:tc:SAML:2.0:ac:classes:SpidL2',
         ),
+        
         'AuthnContextComparison' => 'minimum',
-        /* Per avere gli attributi richiesti tramite il metadata (codice fiscale, ecc) */
+        
+        /*Per autenticazione superiori a SPID Livello 1 occorre specificare 'ForceAuthn' => true */
+        'ForceAuthn' => true,
+        
         'AttributeConsumingServiceIndex' => 0,
         'signature.algorithm' => 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256',
         'metadata.sign.enable' => true,
         'metadata.sign.algorithm' => 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256',
         'metadata.supported.protocols' => array('urn:oasis:names:tc:SAML:2.0:protocol'),
+        
         //Se devono essere diversi i certificati di metadata, ma tim mi dice di no
         /*
           'metadata.sign.certificate' => 'saml_metadata.crt',
@@ -98,6 +102,8 @@ $config = array(
             'it' => 'Bando ERP',
         ),
         'attributes.NameFormat' => 'urn:oasis:names:tc:SAML:2.0:attrname-format:basic',
+        
+        /* Per avere gli attributi richiesti tramite il metadata (codice fiscale, ecc) */
         'attributes' => array(
             'spidCode',
             'fiscalNumber',
@@ -108,14 +114,13 @@ $config = array(
             'email',
             'mobilePhone',
         ),
-        // But only the spidCode e fiscalNumber attribute is strictly required
+        // Attributi obbligatori richiesti in fase di autenticazione
         'attributes.required' => array(
             'spidCode',
             'fiscalNumber',
         ),
         'acs.Bindings' => array('urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'),
         'SingleLogoutServiceBinding' => array('urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'),
-    /* Parametri Manzolo */
     ),
         /*
           'example-sql' => array(
