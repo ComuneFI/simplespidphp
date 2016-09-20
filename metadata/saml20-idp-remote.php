@@ -577,8 +577,8 @@ $metadata['https://posteid.poste.it'] = array (
 
 
 /*INIZIO SIELTE PROD*/
-$metadata['identity.sieltecloud.it'] = array (
-  'entityid' => 'identity.sieltecloud.it',
+$metadata['https://identity.sieltecloud.it/'] = array (
+  'entityid' => 'https://identity.sieltecloud.it/',
   'description' => 
   array (
     'en' => 'Sielte S.p.A.',
