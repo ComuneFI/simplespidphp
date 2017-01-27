@@ -7,6 +7,12 @@
  * @author Andreas Åkre Solberg, UNINETT AS. <andreas.solberg@uninett.no>
  * @package SimpleSAMLphp
  */
+
+
+use JaimePerez\TwigConfigurableI18n\Twig\Environment as Twig_Environment;
+use JaimePerez\TwigConfigurableI18n\Twig\Extensions\Extension\I18n as Twig_Extensions_Extension_I18n;
+
+
 class SimpleSAML_XHTML_Template
 {
 
@@ -25,6 +31,13 @@ class SimpleSAML_XHTML_Template
     private $translator;
 
     /**
+     * The localization backend
+     *
+     * @var \SimpleSAML\Locale\Localization
+     */
+    private $localization;
+
+    /**
      * The configuration to use in this template.
      *
      * @var SimpleSAML_Configuration
@@ -39,6 +52,13 @@ class SimpleSAML_XHTML_Template
     private $template = 'default.php';
 
     /**
+     * The twig environment.
+     *
+     * @var false|Twig_Environment
+     */
+    private $twig;
+
+    /**
      * The template name.
      *
      * @var string
@@ -49,6 +69,12 @@ class SimpleSAML_XHTML_Template
      * Main Twig namespace, to avoid misspelling it *again*
      */
     private $twig_namespace = \Twig_Loader_Filesystem::MAIN_NAMESPACE;
+
+
+    /*
+     * Current module, if any
+     */
+    private $module;
 
 
     /**
@@ -64,7 +90,10 @@ class SimpleSAML_XHTML_Template
         $this->template = $template;
         // TODO: do not remove the slash from the beginning, change the templates instead!
         $this->data['baseurlpath'] = ltrim($this->configuration->getBasePath(), '/');
+        $result = $this->findModuleAndTemplateName($template);
+        $this->module = $result[0];
         $this->translator = new SimpleSAML\Locale\Translate($configuration, $defaultDictionary);
+        $this->localization = new \SimpleSAML\Locale\Localization($configuration);
         $this->twig = $this->setupTwig();
     }
 
@@ -122,9 +151,6 @@ class SimpleSAML_XHTML_Template
         foreach ($templateDirs as $entry) {
             $loader->addPath($entry[key($entry)], key($entry));
         }
-        if (!$loader->exists($this->twig_template)) {
-            return false;
-        }
         return $loader;
     }
 
@@ -142,11 +168,36 @@ class SimpleSAML_XHTML_Template
         }
         // set up template paths
         $loader = $this->setupTwigTemplatepaths();
-        if (!$loader) {
-            return null;
+        // abort if twig template does not exist
+        if (!$loader->exists($this->twig_template)) {
+            return false;
         }
 
-        return new \Twig_Environment($loader, array('cache' => $cache, 'auto_reload' => $auto_reload));
+
+        // load extra i18n domains
+        if ($this->module) {
+            $this->localization->addModuleDomain($this->module);
+        }
+
+        $options = array(
+            'cache' => $cache,
+            'auto_reload' => $auto_reload,
+            'translation_function' => array('\SimpleSAML\Locale\Translate', 'translateSingularNativeGettext'),
+            'translation_function_plural' => array('\SimpleSAML\Locale\Translate', 'translatePluralNativeGettext'),
+        );
+
+        // set up translation
+        if ($this->localization->i18nBackend === \SimpleSAML\Locale\Localization::GETTEXT_I18N_BACKEND) {
+            $options['translation_function'] = array('\SimpleSAML\Locale\Translate', 'translateSingularGettext');
+            $options['translation_function_plural'] = array(
+                '\SimpleSAML\Locale\Translate',
+                'translatePluralGettext'
+            );
+        } // TODO: add a branch for the old SimpleSAMLphp backend
+
+        $twig = new Twig_Environment($loader, $options);
+        $twig->addExtension(new Twig_Extensions_Extension_I18n());
+        return $twig;
     }
 
     /*
@@ -252,6 +303,7 @@ class SimpleSAML_XHTML_Template
      */
     private function twigDefaultContext()
     {
+        $this->data['localeBackend'] = $this->configuration->getString('language.i18n.backend', 'SimpleSAMLphp');
         $this->data['currentLanguage'] = $this->translator->getLanguage()->getLanguage();
         // show language bar by default
         if (!isset($this->data['hideLanguageBar'])) {
@@ -289,13 +341,35 @@ class SimpleSAML_XHTML_Template
      */
     public function show()
     {
-        if ($this->twig) {
+        if ($this->twig !== false) {
             $this->twigDefaultContext();
             echo $this->twig->render($this->twig_template, $this->data);
         } else {
             $filename = $this->findTemplatePath($this->template);
             require($filename);
         }
+    }
+
+
+    /**
+     * Find module the template is in, if any
+     *
+     * @param string $template The relative path from the theme directory to the template file.
+     *
+     * @return array An array with the name of the module and template
+     */
+    private function findModuleAndTemplateName($template)
+    {
+        $tmp = explode(':', $template, 2);
+        if (count($tmp) === 2) {
+            $templateModule = $tmp[0];
+            $templateName = $tmp[1];
+        } else {
+            $templateModule = null;
+            $templateName = $tmp[0];
+        }
+
+        return array($templateModule, $templateName);
     }
 
 
@@ -318,14 +392,9 @@ class SimpleSAML_XHTML_Template
     {
         assert('is_string($template)');
 
-        $tmp = explode(':', $template, 2);
-        if (count($tmp) === 2) {
-            $templateModule = $tmp[0];
-            $templateName = $tmp[1];
-        } else {
-            $templateModule = 'default';
-            $templateName = $tmp[0];
-        }
+        $result = $this->findModuleAndTemplateName($template);
+        $templateModule = $result[0] ? $result[0] : 'default';
+        $templateName = $result[1];
 
         $tmp = explode(':', $this->configuration->getString('theme.use', 'default'), 2);
         if (count($tmp) === 2) {

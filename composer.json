@@ -39,10 +39,12 @@
 		"ext-date": "*",
 		"ext-hash": "*",
 		"ext-json": "*",
-        "simplesamlphp/saml2": "dev-master#381bb70b6578e948a8a3ef8854aff700bdf38fad",
+        "simplesamlphp/saml2": "dev-master#f079abe36ab4101dfda654a087f8003a9673b952 as 2.4",
         "robrichards/xmlseclibs": "~2.0",
         "whitehat101/apr1-md5": "~1.0",
-        "twig/twig": "~1.0"
+        "twig/twig": "~1.0",
+        "gettext/gettext": "^3.5",
+        "jaimeperez/twig-configurable-i18n": "^1.2"
     },
     "require-dev": {
         "ext-pdo_sqlite": "*",
