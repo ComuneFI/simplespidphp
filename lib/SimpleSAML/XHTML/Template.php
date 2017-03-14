@@ -303,6 +303,7 @@ class SimpleSAML_XHTML_Template
      */
     private function twigDefaultContext()
     {
+        $this->data['languageParameterName'] = $this->configuration->getString('language.parameter.name', 'language');
         $this->data['localeBackend'] = $this->configuration->getString('language.i18n.backend', 'SimpleSAMLphp');
         $this->data['currentLanguage'] = $this->translator->getLanguage()->getLanguage();
         // show language bar by default
@@ -332,6 +333,12 @@ class SimpleSAML_XHTML_Template
         $this->data['isRTL'] = false;
         if ($this->translator->getLanguage()->isLanguageRTL()) {
             $this->data['isRTL'] = true;
+        }
+
+        // add query parameters, in case we need them in the template
+        $this->data['queryParams'] = $_GET;
+        if (isset($this->data['queryParams'][$this->data['languageParameterName']])) {
+            unset($this->data['queryParams'][$this->data['languageParameterName']]);
         }
     }
 
