@@ -94,8 +94,8 @@ $config = array(
      * The email address will be used as the recipient address for error reports, and
      * also as the technical contact in generated metadata.
      */
-    'technicalcontact_name' => 'Sviluppo progetti aziendali Comune di Firenze',
-    'technicalcontact_email' => 'po.backoffice2@comune.fi.it',
+    //'technicalcontact_name' => '',
+    //'technicalcontact_email' => '',
 
     /*
      * The timezone of the server. This option should be set to the timezone you want
