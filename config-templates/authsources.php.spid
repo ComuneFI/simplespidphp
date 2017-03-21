@@ -121,6 +121,7 @@ $config = array(
         ),
         'acs.Bindings' => array('urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'),
         'SingleLogoutServiceBinding' => array('urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'),
+		'NameIDPolicy' => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
     ),
         /*
           'example-sql' => array(
