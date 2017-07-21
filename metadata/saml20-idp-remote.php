@@ -22,333 +22,333 @@
   'certFingerprint'      => 'c9ed4dfb07caf13fc21e0fec1572047eb8a7a4cb'
   ); */
 
-/*INFOCERT*/
-/*TEST*/
-$metadata['https://identitycl.infocert.it'] = array (
-  'entityid' => 'https://identitycl.infocert.it',
-  'description' => 
-  array (
-    'it' => 'InfoCert S.p.A. IDP DI TEST',
-    'en' => 'InfoCert S.p.A. IDP DI TEST',
-    'fr' => 'InfoCert S.p.A. IDP DI TEST',
-    'de' => 'InfoCert S.p.A. IDP DI TEST',
-  ),
-  'OrganizationName' => 
-  array (
-    'it' => 'InfoCert S.p.A. IDP DI TEST',
-    'en' => 'InfoCert S.p.A. IDP DI TEST',
-    'fr' => 'InfoCert S.p.A. IDP DI TEST',
-    'de' => 'InfoCert S.p.A. IDP DI TEST',
-  ),
-  'name' => 
-  array (
-    'it' => 'InfoCert S.p.A. IDP DI TEST',
-    'en' => 'InfoCert S.p.A. IDP DI TEST',
-    'fr' => 'InfoCert S.p.A. IDP DI TEST',
-    'de' => 'InfoCert S.p.A. IDP DI TEST',
-  ),
-  'OrganizationDisplayName' => 
-  array (
-    'it' => 'InfoCert S.p.A. IDP DI TEST',
-    'en' => 'InfoCert S.p.A. IDP DI TEST',
-    'fr' => 'InfoCert S.p.A. IDP DI TEST',
-    'de' => 'InfoCert S.p.A. IDP DI TEST',
-  ),
-  'url' => 
-  array (
-    'it' => 'https://www.infocert.it',
-    'en' => 'https://www.infocert.it/international/?lang=en',
-    'fr' => 'https://www.infocert.it/international/?lang=fr',
-    'de' => 'https://www.infocert.it/international/?lang=de',
-  ),
-  'OrganizationURL' => 
-  array (
-    'it' => 'https://www.infocert.it',
-    'en' => 'https://www.infocert.it/international/?lang=en',
-    'fr' => 'https://www.infocert.it/international/?lang=fr',
-    'de' => 'https://www.infocert.it/international/?lang=de',
-  ),
-  'contacts' => 
-  array (
-  ),
-  'metadata-set' => 'saml20-idp-remote',
-  'sign.authnrequest' => true,
-  'SingleSignOnService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://identitycl.infocert.it/spid/samlsso',
+/* INFOCERT */
+/* TEST */
+$metadata['https://identitycl.infocert.it'] = array(
+    'entityid' => 'https://identitycl.infocert.it',
+    'description' =>
+    array(
+        'it' => 'InfoCert S.p.A. IDP DI TEST',
+        'en' => 'InfoCert S.p.A. IDP DI TEST',
+        'fr' => 'InfoCert S.p.A. IDP DI TEST',
+        'de' => 'InfoCert S.p.A. IDP DI TEST',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://identitycl.infocert.it/spid/samlsso',
+    'OrganizationName' =>
+    array(
+        'it' => 'InfoCert S.p.A. IDP DI TEST',
+        'en' => 'InfoCert S.p.A. IDP DI TEST',
+        'fr' => 'InfoCert S.p.A. IDP DI TEST',
+        'de' => 'InfoCert S.p.A. IDP DI TEST',
     ),
-  ),
-  'SingleLogoutService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://identitycl.infocert.it/spid/samlslo',
-      'ResponseLocation' => 'https://identitycl.infocert.it/spid/samlslo/response',
+    'name' =>
+    array(
+        'it' => 'InfoCert S.p.A. IDP DI TEST',
+        'en' => 'InfoCert S.p.A. IDP DI TEST',
+        'fr' => 'InfoCert S.p.A. IDP DI TEST',
+        'de' => 'InfoCert S.p.A. IDP DI TEST',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://identitycl.infocert.it/spid/samlslo',
-      'ResponseLocation' => 'https://identitycl.infocert.it/spid/samlslo/response',
+    'OrganizationDisplayName' =>
+    array(
+        'it' => 'InfoCert S.p.A. IDP DI TEST',
+        'en' => 'InfoCert S.p.A. IDP DI TEST',
+        'fr' => 'InfoCert S.p.A. IDP DI TEST',
+        'de' => 'InfoCert S.p.A. IDP DI TEST',
     ),
-  ),
-  'ArtifactResolutionService' => 
-  array (
-  ),
-  'NameIDFormats' => 
-  array (
-    0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
-  ),
-  'keys' => 
-  array (
-    0 => 
-    array (
-      'encryption' => false,
-      'signing' => true,
-      'type' => 'X509Certificate',
-      'X509Certificate' => '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',
+    'url' =>
+    array(
+        'it' => 'https://www.infocert.it',
+        'en' => 'https://www.infocert.it/international/?lang=en',
+        'fr' => 'https://www.infocert.it/international/?lang=fr',
+        'de' => 'https://www.infocert.it/international/?lang=de',
     ),
-  ),
+    'OrganizationURL' =>
+    array(
+        'it' => 'https://www.infocert.it',
+        'en' => 'https://www.infocert.it/international/?lang=en',
+        'fr' => 'https://www.infocert.it/international/?lang=fr',
+        'de' => 'https://www.infocert.it/international/?lang=de',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://identitycl.infocert.it/spid/samlsso',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://identitycl.infocert.it/spid/samlsso',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://identitycl.infocert.it/spid/samlslo',
+            'ResponseLocation' => 'https://identitycl.infocert.it/spid/samlslo/response',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://identitycl.infocert.it/spid/samlslo',
+            'ResponseLocation' => 'https://identitycl.infocert.it/spid/samlslo/response',
+        ),
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => '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',
+        ),
+    ),
 );
-/*PROD*/
-$metadata['https://identity.infocert.it'] = array (
-  'entityid' => 'https://identity.infocert.it',
-  'description' => 
-  array (
-    'it' => 'InfoCert S.p.A.',
-    'en' => 'InfoCert S.p.A.',
-    'fr' => 'InfoCert S.p.A.',
-    'de' => 'InfoCert S.p.A.',
-  ),
-  'OrganizationName' => 
-  array (
-    'it' => 'InfoCert S.p.A.',
-    'en' => 'InfoCert S.p.A.',
-    'fr' => 'InfoCert S.p.A.',
-    'de' => 'InfoCert S.p.A.',
-  ),
-  'name' => 
-  array (
-    'it' => 'InfoCert S.p.A.',
-    'en' => 'InfoCert S.p.A.',
-    'fr' => 'InfoCert S.p.A.',
-    'de' => 'InfoCert S.p.A.',
-  ),
-  'OrganizationDisplayName' => 
-  array (
-    'it' => 'InfoCert S.p.A.',
-    'en' => 'InfoCert S.p.A.',
-    'fr' => 'InfoCert S.p.A.',
-    'de' => 'InfoCert S.p.A.',
-  ),
-  'url' => 
-  array (
-    'it' => 'https://www.infocert.it',
-    'en' => 'https://www.infocert.it/international/?lang=en',
-    'fr' => 'https://www.infocert.it/international/?lang=fr',
-    'de' => 'https://www.infocert.it/international/?lang=de',
-  ),
-  'OrganizationURL' => 
-  array (
-    'it' => 'https://www.infocert.it',
-    'en' => 'https://www.infocert.it/international/?lang=en',
-    'fr' => 'https://www.infocert.it/international/?lang=fr',
-    'de' => 'https://www.infocert.it/international/?lang=de',
-  ),
-  'contacts' => 
-  array (
-  ),
-  'metadata-set' => 'saml20-idp-remote',
-  'sign.authnrequest' => true,
-  'SingleSignOnService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://identity.infocert.it/spid/samlsso',
+/* PROD */
+$metadata['https://identity.infocert.it'] = array(
+    'entityid' => 'https://identity.infocert.it',
+    'description' =>
+    array(
+        'it' => 'InfoCert S.p.A.',
+        'en' => 'InfoCert S.p.A.',
+        'fr' => 'InfoCert S.p.A.',
+        'de' => 'InfoCert S.p.A.',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://identity.infocert.it/spid/samlsso',
+    'OrganizationName' =>
+    array(
+        'it' => 'InfoCert S.p.A.',
+        'en' => 'InfoCert S.p.A.',
+        'fr' => 'InfoCert S.p.A.',
+        'de' => 'InfoCert S.p.A.',
     ),
-  ),
-  'SingleLogoutService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://identity.infocert.it/spid/samlslo',
-      'ResponseLocation' => 'https://identity.infocert.it/spid/samlslo/response',
+    'name' =>
+    array(
+        'it' => 'InfoCert S.p.A.',
+        'en' => 'InfoCert S.p.A.',
+        'fr' => 'InfoCert S.p.A.',
+        'de' => 'InfoCert S.p.A.',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://identity.infocert.it/spid/samlslo',
-      'ResponseLocation' => 'https://identity.infocert.it/spid/samlslo/response',
+    'OrganizationDisplayName' =>
+    array(
+        'it' => 'InfoCert S.p.A.',
+        'en' => 'InfoCert S.p.A.',
+        'fr' => 'InfoCert S.p.A.',
+        'de' => 'InfoCert S.p.A.',
     ),
-  ),
-  'ArtifactResolutionService' => 
-  array (
-  ),
-  'NameIDFormats' => 
-  array (
-    0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
-  ),
-  'keys' => 
-  array (
-    0 => 
-    array (
-      'encryption' => false,
-      'signing' => true,
-      'type' => 'X509Certificate',
-      'X509Certificate' => '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',
+    'url' =>
+    array(
+        'it' => 'https://www.infocert.it',
+        'en' => 'https://www.infocert.it/international/?lang=en',
+        'fr' => 'https://www.infocert.it/international/?lang=fr',
+        'de' => 'https://www.infocert.it/international/?lang=de',
     ),
-  ),
+    'OrganizationURL' =>
+    array(
+        'it' => 'https://www.infocert.it',
+        'en' => 'https://www.infocert.it/international/?lang=en',
+        'fr' => 'https://www.infocert.it/international/?lang=fr',
+        'de' => 'https://www.infocert.it/international/?lang=de',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://identity.infocert.it/spid/samlsso',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://identity.infocert.it/spid/samlsso',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://identity.infocert.it/spid/samlslo',
+            'ResponseLocation' => 'https://identity.infocert.it/spid/samlslo/response',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://identity.infocert.it/spid/samlslo',
+            'ResponseLocation' => 'https://identity.infocert.it/spid/samlslo/response',
+        ),
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => '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',
+        ),
+    ),
 );
 
-/*FINE INFOCERT PROD*/
+/* FINE INFOCERT PROD */
 
-/*TIM*/
-/*TEST*/
-$metadata['https://login.idcoll.tim.it/affwebservices/public/saml2sso'] = array (
-  'entityid' => 'https://login.idcoll.tim.it/affwebservices/public/saml2sso',
-  'description' => 
-  array (
-    'en' => 'TI Trust Technologies srl  IDP DI TEST',
-  ),
-  'OrganizationName' => 
-  array (
-    'en' => 'TI Trust Technologies srl IDP DI TEST',
-  ),
-  'name' => 
-  array (
-    'en' => 'Trust Technologies srl IDP DI TEST',
-  ),
-  'OrganizationDisplayName' => 
-  array (
-    'en' => 'Trust Technologies srl IDP DI TEST',
-  ),
-  'url' => 
-  array (
-    'en' => 'https://www.trusttechnologies.it IDP DI TEST',
-  ),
-  'OrganizationURL' => 
-  array (
-    'en' => 'https://www.trusttechnologies.it IDP DI TEST',
-  ),
-  'contacts' => 
-  array (
-  ),
-  'metadata-set' => 'saml20-idp-remote',
-  'sign.authnrequest' => true,
-  'SingleSignOnService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://login.idcoll.tim.it/affwebservices/public/saml2sso',
+/* TIM */
+/* TEST */
+$metadata['https://login.idcoll.tim.it/affwebservices/public/saml2sso'] = array(
+    'entityid' => 'https://login.idcoll.tim.it/affwebservices/public/saml2sso',
+    'description' =>
+    array(
+        'en' => 'TI Trust Technologies srl  IDP DI TEST',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://login.idcoll.tim.it/affwebservices/public/saml2sso',
+    'OrganizationName' =>
+    array(
+        'en' => 'TI Trust Technologies srl IDP DI TEST',
     ),
-  ),
-  'SingleLogoutService' => 
-  array (
-  ),
-  'ArtifactResolutionService' => 
-  array (
-  ),
-  'NameIDFormats' => 
-  array (
-    0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
-  ),
-  'keys' => 
-  array (
-    0 => 
-    array (
-      'encryption' => false,
-      'signing' => true,
-      'type' => 'X509Certificate',
-      'X509Certificate' => 'MIIEMzCCAxugAwIBAgIJALYnjONXMMqhMA0GCSqGSIb3DQEBCwUAMIGvMQswCQYDVQQGEwJJVDELMAkGA1UECAwCUk0xEDAOBgNVBAcMB1BvbWV6aWExLjAsBgNVBAoMJVRlbGVjb20gSXRhbGlhIFRydXN0IFRlY2hub2xvZ2llcyBzcmwxLTArBgNVBAsMJFNlcnZpemkgcGVyIGwnaWRlbnRpdGEgZGlnaXRhbGUgQ09MTDEiMCAGA1UEAwwZVEkgVHJ1c3QgVGVjaG5vbG9naWVzIHNybDAeFw0xNTExMTgxMDM3MDVaFw0xNzExMTcxMDM3MDVaMIGvMQswCQYDVQQGEwJJVDELMAkGA1UECAwCUk0xEDAOBgNVBAcMB1BvbWV6aWExLjAsBgNVBAoMJVRlbGVjb20gSXRhbGlhIFRydXN0IFRlY2hub2xvZ2llcyBzcmwxLTArBgNVBAsMJFNlcnZpemkgcGVyIGwnaWRlbnRpdGEgZGlnaXRhbGUgQ09MTDEiMCAGA1UEAwwZVEkgVHJ1c3QgVGVjaG5vbG9naWVzIHNybDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALps9l10xvpHfRo7BJaemptHOl+EoAy//Y/NFzoLQYk4HuIw7hhfdkOEV9mVfUDfq9odvgUtvmFDpIXoiAKo9vkG/sjR8iGlnj+gTi4xjnfGf1IRshP8cXhyK/65GH6KyxcAI18GMGwq9XEpO91akVJGaxm2a5wshrFIaRGAqpQRN9+ZXu7sUVWu/8noizUGenbULRU2k4OqHji57zi32e11tK4nXO9buwNUgHTDtQd7s8z1AxMXH7MRF6yRx1+AkGXGtvckc9+PQ8xyaxs1OtE/CKrN+OdPs2HRQ7ik1fpTz4SvFnReH/+lbdW84ff4g238JOGiqZ8JYpAk7Utnhe0CAwEAAaNQME4wHQYDVR0OBBYEFHaE7d41rySTbypGFC2POSyo9guLMB8GA1UdIwQYMBaAFHaE7d41rySTbypGFC2POSyo9guLMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAKOFXkkMSMmCF68/NYcQ/ki0F2TKxetpUZEtTsYAoP3kap4wGDrsu+qNgyTJcMB91rfF6uZ2Zd20N3MXgd8+MFsjMIjBo5nRAO8rSl79t0Nlva1WyqYgZbTSJjw24AXBIjLF7vw1ZVRMAv1/D1ehxDHXF7mOnQ0UiysED8DeohULZJyPO/bFcCPHI9LSNtJL6bW8pDIJR7Fc0M6FkF7CTTgbtNpgPU7P8iCcUL97BCe9alTJ0wApI1XU2/EG5Dz5w33ZpOOx6c8r1O1XglCiUqwuqiQNqqL1sFW7uCg0Q7KQzmwLy1ZCOh0o3uPIxQZDW2oRYX18I++G7aGQoGJ+mfs=',
+    'name' =>
+    array(
+        'en' => 'Trust Technologies srl IDP DI TEST',
     ),
-  ),
+    'OrganizationDisplayName' =>
+    array(
+        'en' => 'Trust Technologies srl IDP DI TEST',
+    ),
+    'url' =>
+    array(
+        'en' => 'https://www.trusttechnologies.it IDP DI TEST',
+    ),
+    'OrganizationURL' =>
+    array(
+        'en' => 'https://www.trusttechnologies.it IDP DI TEST',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://login.idcoll.tim.it/affwebservices/public/saml2sso',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://login.idcoll.tim.it/affwebservices/public/saml2sso',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIEMzCCAxugAwIBAgIJALYnjONXMMqhMA0GCSqGSIb3DQEBCwUAMIGvMQswCQYDVQQGEwJJVDELMAkGA1UECAwCUk0xEDAOBgNVBAcMB1BvbWV6aWExLjAsBgNVBAoMJVRlbGVjb20gSXRhbGlhIFRydXN0IFRlY2hub2xvZ2llcyBzcmwxLTArBgNVBAsMJFNlcnZpemkgcGVyIGwnaWRlbnRpdGEgZGlnaXRhbGUgQ09MTDEiMCAGA1UEAwwZVEkgVHJ1c3QgVGVjaG5vbG9naWVzIHNybDAeFw0xNTExMTgxMDM3MDVaFw0xNzExMTcxMDM3MDVaMIGvMQswCQYDVQQGEwJJVDELMAkGA1UECAwCUk0xEDAOBgNVBAcMB1BvbWV6aWExLjAsBgNVBAoMJVRlbGVjb20gSXRhbGlhIFRydXN0IFRlY2hub2xvZ2llcyBzcmwxLTArBgNVBAsMJFNlcnZpemkgcGVyIGwnaWRlbnRpdGEgZGlnaXRhbGUgQ09MTDEiMCAGA1UEAwwZVEkgVHJ1c3QgVGVjaG5vbG9naWVzIHNybDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALps9l10xvpHfRo7BJaemptHOl+EoAy//Y/NFzoLQYk4HuIw7hhfdkOEV9mVfUDfq9odvgUtvmFDpIXoiAKo9vkG/sjR8iGlnj+gTi4xjnfGf1IRshP8cXhyK/65GH6KyxcAI18GMGwq9XEpO91akVJGaxm2a5wshrFIaRGAqpQRN9+ZXu7sUVWu/8noizUGenbULRU2k4OqHji57zi32e11tK4nXO9buwNUgHTDtQd7s8z1AxMXH7MRF6yRx1+AkGXGtvckc9+PQ8xyaxs1OtE/CKrN+OdPs2HRQ7ik1fpTz4SvFnReH/+lbdW84ff4g238JOGiqZ8JYpAk7Utnhe0CAwEAAaNQME4wHQYDVR0OBBYEFHaE7d41rySTbypGFC2POSyo9guLMB8GA1UdIwQYMBaAFHaE7d41rySTbypGFC2POSyo9guLMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAKOFXkkMSMmCF68/NYcQ/ki0F2TKxetpUZEtTsYAoP3kap4wGDrsu+qNgyTJcMB91rfF6uZ2Zd20N3MXgd8+MFsjMIjBo5nRAO8rSl79t0Nlva1WyqYgZbTSJjw24AXBIjLF7vw1ZVRMAv1/D1ehxDHXF7mOnQ0UiysED8DeohULZJyPO/bFcCPHI9LSNtJL6bW8pDIJR7Fc0M6FkF7CTTgbtNpgPU7P8iCcUL97BCe9alTJ0wApI1XU2/EG5Dz5w33ZpOOx6c8r1O1XglCiUqwuqiQNqqL1sFW7uCg0Q7KQzmwLy1ZCOh0o3uPIxQZDW2oRYX18I++G7aGQoGJ+mfs=',
+        ),
+    ),
 );
-/*PROD*/
-/*INIZIO TIM PROD*/
-$metadata['https://login.id.tim.it/affwebservices/public/saml2sso'] = array (
-  'entityid' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
-  'description' => 
-  array (
-    'en' => 'TI Trust Technologies srl',
-  ),
-  'OrganizationName' => 
-  array (
-    'en' => 'TI Trust Technologies srl',
-  ),
-  'name' => 
-  array (
-    'en' => 'Trust Technologies srl',
-  ),
-  'OrganizationDisplayName' => 
-  array (
-    'en' => 'Trust Technologies srl',
-  ),
-  'url' => 
-  array (
-    'en' => 'https://www.trusttechnologies.it',
-  ),
-  'OrganizationURL' => 
-  array (
-    'en' => 'https://www.trusttechnologies.it',
-  ),
-  'contacts' => 
-  array (
-  ),
-  'metadata-set' => 'saml20-idp-remote',
-  'sign.authnrequest' => true,
-  'SingleSignOnService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
+/* PROD */
+/* INIZIO TIM PROD */
+$metadata['https://login.id.tim.it/affwebservices/public/saml2sso'] = array(
+    'entityid' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
+    'description' =>
+    array(
+        'en' => 'TI Trust Technologies srl',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
+    'OrganizationName' =>
+    array(
+        'en' => 'TI Trust Technologies srl',
     ),
-  ),
-  'SingleLogoutService' => 
-  array (
-  ),
-  'ArtifactResolutionService' => 
-  array (
-  ),
-  'NameIDFormats' => 
-  array (
-    0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
-  ),
-  'keys' => 
-  array (
-    0 => 
-    array (
-      'encryption' => false,
-      'signing' => true,
-      'type' => 'X509Certificate',
-      'X509Certificate' => 'MIIE7jCCA9agAwIBAgIJAIfOQuFIcYGRMA0GCSqGSIb3DQEBCwUAMIGqMQswCQYDVQQGEwJJVDEL
+    'name' =>
+    array(
+        'en' => 'Trust Technologies srl',
+    ),
+    'OrganizationDisplayName' =>
+    array(
+        'en' => 'Trust Technologies srl',
+    ),
+    'url' =>
+    array(
+        'en' => 'https://www.trusttechnologies.it',
+    ),
+    'OrganizationURL' =>
+    array(
+        'en' => 'https://www.trusttechnologies.it',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://login.id.tim.it/affwebservices/public/saml2sso',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIE7jCCA9agAwIBAgIJAIfOQuFIcYGRMA0GCSqGSIb3DQEBCwUAMIGqMQswCQYDVQQGEwJJVDEL
 MAkGA1UECBMCUk0xEDAOBgNVBAcTB1BvbWV6aWExLjAsBgNVBAoTJVRlbGVjb20gSXRhbGlhIFRy
 dXN0IFRlY2hub2xvZ2llcyBzcmwxKDAmBgNVBAsTH1NlcnZpemkgcGVyIGwnaWRlbnRpdGEgZGln
 aXRhbGUxIjAgBgNVBAMTGVRJIFRydXN0IFRlY2hub2xvZ2llcyBzcmwwHhcNMTYwMTE4MTAxODA2
@@ -371,88 +371,88 @@ vU7lb2MfB+2+Wqg+1Hf8c3ABfDItuJoL95OsbEO4a+3a6EMfaAdSaeTb2+rsfr6R12cSxQcx1643
 0iMhGj4T9GpFp8XH/JSE5XJvIddpNxuzf+/LlbcsMJ5lljitlOYUi7MxLpiqtgl56UD1YkGcezoi
 2Glb3m3l3a2V4pShh6qROfyd87jLCjqsuBJtlgToSQgMTb4lFv9RBbFD3rjL8gCx55W6kxP1Yecl
 FVPzk/7Xaca29uTJ',
+        ),
     ),
-  ),
 );
 
-/*FINE TIM PROD*/
+/* FINE TIM PROD */
 
-/*POSTE*/
-/*TEST*/
-$metadata['https://spidposte.test.poste.it'] = array (
-  'entityid' => 'https://spidposte.test.poste.it',
-  'description' => 
-  array (
-    'it' => 'Poste Italiane SpA IDP DI TEST',
-  ),
-  'OrganizationName' => 
-  array (
-    'it' => 'Poste Italiane SpA IDP DI TEST',
-  ),
-  'name' => 
-  array (
-    'it' => 'Poste Italiane SpA IDP DI TEST',
-  ),
-  'OrganizationDisplayName' => 
-  array (
-    'it' => 'Poste Italiane SpA IDP DI TEST',
-  ),
-  'url' => 
-  array (
-    'it' => 'https://spidposte.test.poste.it',
-  ),
-  'OrganizationURL' => 
-  array (
-    'it' => 'https://spidposte.test.poste.it',
-  ),
-  'contacts' => 
-  array (
-  ),
-  'metadata-set' => 'saml20-idp-remote',
-  'sign.authnrequest' => true,
-  'SingleSignOnService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://spidposte.test.poste.it/jod-fs/ssoservicepost',
+/* POSTE */
+/* TEST */
+$metadata['https://spidposte.test.poste.it'] = array(
+    'entityid' => 'https://spidposte.test.poste.it',
+    'description' =>
+    array(
+        'it' => 'Poste Italiane SpA IDP DI TEST',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://spidposte.test.poste.it/jod-fs/ssoserviceredirect',
+    'OrganizationName' =>
+    array(
+        'it' => 'Poste Italiane SpA IDP DI TEST',
     ),
-  ),
-  'SingleLogoutService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://spidposte.test.poste.it/jod-fs/sloservicepost',
-      'ResponseLocation' => 'https://spidposte.test.poste.it/jod-fs/sloserviceresponsepost',
+    'name' =>
+    array(
+        'it' => 'Poste Italiane SpA IDP DI TEST',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://spidposte.test.poste.it/jod-fs/sloserviceredirect',
-      'ResponseLocation' => 'https://spidposte.test.poste.it/jod-fs/sloserviceresponseredirect',
+    'OrganizationDisplayName' =>
+    array(
+        'it' => 'Poste Italiane SpA IDP DI TEST',
     ),
-  ),
-  'ArtifactResolutionService' => 
-  array (
-  ),
-  'NameIDFormats' => 
-  array (
-    0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
-  ),
-  'keys' => 
-  array (
-    0 => 
-    array (
-      'encryption' => false,
-      'signing' => true,
-      'type' => 'X509Certificate',
-      'X509Certificate' => 'MIIFSDCCBDCgAwIBAgIVAOpzjrxo3HDlXq9WZ+FtSh3Rgf39MA0GCSqGSIb3DQEBCwUAMG8xCzAJ
+    'url' =>
+    array(
+        'it' => 'https://spidposte.test.poste.it',
+    ),
+    'OrganizationURL' =>
+    array(
+        'it' => 'https://spidposte.test.poste.it',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://spidposte.test.poste.it/jod-fs/ssoservicepost',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://spidposte.test.poste.it/jod-fs/ssoserviceredirect',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://spidposte.test.poste.it/jod-fs/sloservicepost',
+            'ResponseLocation' => 'https://spidposte.test.poste.it/jod-fs/sloserviceresponsepost',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://spidposte.test.poste.it/jod-fs/sloserviceredirect',
+            'ResponseLocation' => 'https://spidposte.test.poste.it/jod-fs/sloserviceresponseredirect',
+        ),
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIFSDCCBDCgAwIBAgIVAOpzjrxo3HDlXq9WZ+FtSh3Rgf39MA0GCSqGSIb3DQEBCwUAMG8xCzAJ
 BgNVBAYTAklUMQswCQYDVQQIDAJJVDEYMBYGA1UECgwPUG9zdGVjb20gUy5wLkEuMSIwIAYDVQQL
 DBlTZXJ2aXppIGRpIENlcnRpZmljYXppb25lMRUwEwYDVQQDDAxQb3N0ZWNvbSBDUzMwHhcNMTYw
 MTA4MTY1NTUwWhcNMTcwMTA4MTY1NTUwWjBvMQswCQYDVQQGEwJJVDEeMBwGA1UECgwVUG9zdGUg
@@ -476,80 +476,79 @@ xWeHOJrNgyA+4Wsvk30yYzIXzvX6jXFLPOIljX+ut+AHuwHHh/aLYa6TILRBL2t3UYKie/Se5iXq
 zfpLrb03L9x/fYSJ0RcsxqHEifd9cqVjOQmt2biOfgcu/gmFDiydvCmLoHVqRcXLk8Yjkfq0Behw
 kGruo4PqU3UQCLwSWxww4WnAgK5Tz/++Q7n7JRoznRXuTAI0TDq2PJrFIPQXnuSSNsP0h/qJSB2Q
 FIOlmjL/5F5Vcc0pt3C4RYFPAu4gqYBQ4nfr0JTZ1/70LzM539Vo/5nKw4Sf',
+        ),
     ),
-  ),
 );
 
-/*INIZIO POSTE PROD*/
-$metadata['https://posteid.poste.it'] = array (
-  'entityid' => 'https://posteid.poste.it',
-  'description' => 
-  array (
-    'it' => 'Poste Italiane SpA',
-  ),
-  'OrganizationName' => 
-  array (
-    'it' => 'Poste Italiane SpA',
-  ),
-  'name' => 
-  array (
-    'it' => 'Poste Italiane SpA',
-  ),
-  'OrganizationDisplayName' => 
-  array (
-    'it' => 'Poste Italiane SpA',
-  ),
-  'url' => 
-  array (
-    'it' => 'http://www.poste.it',
-  ),
-  'OrganizationURL' => 
-  array (
-    'it' => 'http://www.poste.it',
-  ),
-  'contacts' => 
-  array (
-  ),
-  'metadata-set' => 'saml20-idp-remote',
-  'sign.authnrequest' => true,
-  
-  'SingleSignOnService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://posteid.poste.it/jod-fs/ssoservicepost',
+/* INIZIO POSTE PROD */
+$metadata['https://posteid.poste.it'] = array(
+    'entityid' => 'https://posteid.poste.it',
+    'description' =>
+    array(
+        'it' => 'Poste Italiane SpA',
     ),
-    1 => 
-    array (
-      'index' => 1,
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://posteid.poste.it/jod-fs/ssoserviceredirect',
+    'OrganizationName' =>
+    array(
+        'it' => 'Poste Italiane SpA',
     ),
-  ),
-  'SingleLogoutService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://posteid.poste.it/jod-fs/sloservicepost',
+    'name' =>
+    array(
+        'it' => 'Poste Italiane SpA',
     ),
-  ),
-  'ArtifactResolutionService' => 
-  array (
-  ),
-  'NameIDFormats' => 
-  array (
-    0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
-  ),
-  'keys' => 
-  array (
-    0 => 
-    array (
-      'encryption' => false,
-      'signing' => true,
-      'type' => 'X509Certificate',
-      'X509Certificate' => 'MIIEKzCCAxOgAwIBAgIDE2Y0MA0GCSqGSIb3DQEBCwUAMGAxCzAJBgNVBAYTAklUMRgwFgYDVQQK
+    'OrganizationDisplayName' =>
+    array(
+        'it' => 'Poste Italiane SpA',
+    ),
+    'url' =>
+    array(
+        'it' => 'http://www.poste.it',
+    ),
+    'OrganizationURL' =>
+    array(
+        'it' => 'http://www.poste.it',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://posteid.poste.it/jod-fs/ssoservicepost',
+        ),
+        1 =>
+        array(
+            'index' => 1,
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://posteid.poste.it/jod-fs/ssoserviceredirect',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://posteid.poste.it/jod-fs/sloservicepost',
+        ),
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIEKzCCAxOgAwIBAgIDE2Y0MA0GCSqGSIb3DQEBCwUAMGAxCzAJBgNVBAYTAklUMRgwFgYDVQQK
                         DA9Qb3N0ZWNvbSBTLnAuQS4xIDAeBgNVBAsMF0NlcnRpZmljYXRpb24gQXV0aG9yaXR5MRUwEwYD
                         VQQDDAxQb3N0ZWNvbSBDQTMwHhcNMTYwMjI2MTU1MjQ0WhcNMjEwMjI2MTU1MjQ0WjBxMQswCQYD
                         VQQGEwJJVDEOMAwGA1UECAwFSXRhbHkxDTALBgNVBAcMBFJvbWUxHjAcBgNVBAoMFVBvc3RlIEl0
@@ -568,101 +567,375 @@ $metadata['https://posteid.poste.it'] = array (
                         vttD8Vd9vIZg1xBBG3Fai13dwvSj3hAZd8ug8a8fW1y/iDbRC5D1O+HlHDuvIW4LbJ093jdj+oZw
                         Syd216gtXL00QA0C1uMuDv9Wf9IxniTb710dRSgIcM4/eR7832fZgdOsoalFzGYWxSCs8WOZrjpu
                         b1fdaRSEuCQk2+gmdsiRcTs9EqPCCNiNlrNAiWEyGtL8A4ao3pDMwCtrb2yr',
+        ),
     ),
-  ),
 );
 
-/*FINE POSTE PROD*/
+/* FINE POSTE PROD */
 
 
 
-/*INIZIO SIELTE PROD*/
-$metadata['identity.sieltecloud.it'] = array (
-  'entityid' => 'identity.sieltecloud.it',
-  'description' => 
-  array (
-    'en' => 'Sielte S.p.A.',
-    'it' => 'Sielte S.p.A.',
-  ),
-  'OrganizationName' => 
-  array (
-    'en' => 'Sielte S.p.A.',
-    'it' => 'Sielte S.p.A.',
-  ),
-  'name' => 
-  array (
-    'en' => 'http://www.sielte.it',
-    'it' => 'http://www.sielte.it',
-  ),
-  'OrganizationDisplayName' => 
-  array (
-    'en' => 'http://www.sielte.it',
-    'it' => 'http://www.sielte.it',
-  ),
-  'url' => 
-  array (
-    'en' => 'http://www.sielte.it',
-    'it' => 'http://www.sielte.it',
-  ),
-  'OrganizationURL' => 
-  array (
-    'en' => 'http://www.sielte.it',
-    'it' => 'http://www.sielte.it',
-  ),
-  'contacts' => 
-  array (
-  ),
-  'metadata-set' => 'saml20-idp-remote',
-  'sign.authnrequest' => true,
-  'SingleSignOnService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SSOService.php',
+/* INIZIO SIELTE PROD */
+$metadata['identity.sieltecloud.it'] = array(
+    'entityid' => 'identity.sieltecloud.it',
+    'description' =>
+    array(
+        'en' => 'Sielte S.p.A.',
+        'it' => 'Sielte S.p.A.',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SSOService.php',
+    'OrganizationName' =>
+    array(
+        'en' => 'Sielte S.p.A.',
+        'it' => 'Sielte S.p.A.',
     ),
-  ),
-  'SingleLogoutService' => 
-  array (
-    0 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
-      'Location' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SingleLogoutService.php',
+    'name' =>
+    array(
+        'en' => 'http://www.sielte.it',
+        'it' => 'http://www.sielte.it',
     ),
-    1 => 
-    array (
-      'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
-      'Location' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SingleLogoutService.php',
+    'OrganizationDisplayName' =>
+    array(
+        'en' => 'http://www.sielte.it',
+        'it' => 'http://www.sielte.it',
     ),
-  ),
-  'ArtifactResolutionService' => 
-  array (
-  ),
-  'NameIDFormats' => 
-  array (
-    0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
-  ),
-  'keys' => 
-  array (
-    0 => 
-    array (
-      'encryption' => false,
-      'signing' => true,
-      'type' => 'X509Certificate',
-      'X509Certificate' => 'MIIDczCCAlugAwIBAgIJAMsX0iEKQM6xMA0GCSqGSIb3DQEBCwUAMFAxCzAJBgNVBAYTAklUMQ4wDAYDVQQIDAVJdGFseTEgMB4GA1UEBwwXU2FuIEdyZWdvcmlvIGRpIENhdGFuaWExDzANBgNVBAoMBlNpZWx0ZTAeFw0xNTEyMTQwODE0MTVaFw0yNTEyMTMwODE0MTVaMFAxCzAJBgNVBAYTAklUMQ4wDAYDVQQIDAVJdGFseTEgMB4GA1UEBwwXU2FuIEdyZWdvcmlvIGRpIENhdGFuaWExDzANBgNVBAoMBlNpZWx0ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANIRlOjM/tS9V9jYjJreqZSctuYriLfPTDgX2XdhWEbMpMpwA9p0bsbLQoC1gP0piLO+qbCsIh9+boPfb4/dLIA7E+Vmm5/+evOtzvjfHG4oXjZK6jo08QwkVV8Bm1jkakJPVZ57QFbyDSr+uBbIMY7CjA2LdgnIIwKN/kSfFhrZUMJ6ZxwegM100X5psfNPSV9WUtgHsvqlIlvydPo2rMm21sg+2d3Vtg8DthNSYRLqgazCc0NTsigrH7niSbJCO0nq/svMX2rSFdh5GFK7/pxT+c3OFWqIR8r+RX4qW+auJqkbTuNRwxV22Sm6r69ZJwV0WspvsVJi+FYqiyoWhgUCAwEAAaNQME4wHQYDVR0OBBYEFCUx063GwUhEFDllwCBe/+jdeW+XMB8GA1UdIwQYMBaAFCUx063GwUhEFDllwCBe/+jdeW+XMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBADF94c3JwyBM86QBLeoUZxRYKPniba8B39FfJk0pb+LejKfZMvspOrOFgYQQ9UrS8IFkBX9Xr7/tjRbr2cPwZNjrEZhoq+NfcE09bnaWTyEl1IEKK8TWOupJj9UNVpYXX0LfIRrMwNEzAPQykOaqPOnyHxOCPTY957xXSo3jXOyvugtvPHbd+iliAzUoPm1tgiTKWS+EkQ/e22eFv5NEyT+oHiKovrQ+voPWOIvJVMjiTyxRic8fEnI9zzV0SxWvFvty77wgcYbeEuFZa3iidhojUge8o1uY/JUyQjFxcvvfAgWSIZwdHiNyWaAgwzLPmPCPsvBdR3xrlcDg/9Bd3D0=',
+    'url' =>
+    array(
+        'en' => 'http://www.sielte.it',
+        'it' => 'http://www.sielte.it',
     ),
-    1 => 
-    array (
-      'encryption' => true,
-      'signing' => false,
-      'type' => 'X509Certificate',
-      'X509Certificate' => 'MIIDczCCAlugAwIBAgIJAMsX0iEKQM6xMA0GCSqGSIb3DQEBCwUAMFAxCzAJBgNVBAYTAklUMQ4wDAYDVQQIDAVJdGFseTEgMB4GA1UEBwwXU2FuIEdyZWdvcmlvIGRpIENhdGFuaWExDzANBgNVBAoMBlNpZWx0ZTAeFw0xNTEyMTQwODE0MTVaFw0yNTEyMTMwODE0MTVaMFAxCzAJBgNVBAYTAklUMQ4wDAYDVQQIDAVJdGFseTEgMB4GA1UEBwwXU2FuIEdyZWdvcmlvIGRpIENhdGFuaWExDzANBgNVBAoMBlNpZWx0ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANIRlOjM/tS9V9jYjJreqZSctuYriLfPTDgX2XdhWEbMpMpwA9p0bsbLQoC1gP0piLO+qbCsIh9+boPfb4/dLIA7E+Vmm5/+evOtzvjfHG4oXjZK6jo08QwkVV8Bm1jkakJPVZ57QFbyDSr+uBbIMY7CjA2LdgnIIwKN/kSfFhrZUMJ6ZxwegM100X5psfNPSV9WUtgHsvqlIlvydPo2rMm21sg+2d3Vtg8DthNSYRLqgazCc0NTsigrH7niSbJCO0nq/svMX2rSFdh5GFK7/pxT+c3OFWqIR8r+RX4qW+auJqkbTuNRwxV22Sm6r69ZJwV0WspvsVJi+FYqiyoWhgUCAwEAAaNQME4wHQYDVR0OBBYEFCUx063GwUhEFDllwCBe/+jdeW+XMB8GA1UdIwQYMBaAFCUx063GwUhEFDllwCBe/+jdeW+XMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBADF94c3JwyBM86QBLeoUZxRYKPniba8B39FfJk0pb+LejKfZMvspOrOFgYQQ9UrS8IFkBX9Xr7/tjRbr2cPwZNjrEZhoq+NfcE09bnaWTyEl1IEKK8TWOupJj9UNVpYXX0LfIRrMwNEzAPQykOaqPOnyHxOCPTY957xXSo3jXOyvugtvPHbd+iliAzUoPm1tgiTKWS+EkQ/e22eFv5NEyT+oHiKovrQ+voPWOIvJVMjiTyxRic8fEnI9zzV0SxWvFvty77wgcYbeEuFZa3iidhojUge8o1uY/JUyQjFxcvvfAgWSIZwdHiNyWaAgwzLPmPCPsvBdR3xrlcDg/9Bd3D0=',
+    'OrganizationURL' =>
+    array(
+        'en' => 'http://www.sielte.it',
+        'it' => 'http://www.sielte.it',
     ),
-  ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SSOService.php',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SSOService.php',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SingleLogoutService.php',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://identity.sieltecloud.it/simplesaml/saml2/idp/SingleLogoutService.php',
+        ),
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIDczCCAlugAwIBAgIJAMsX0iEKQM6xMA0GCSqGSIb3DQEBCwUAMFAxCzAJBgNVBAYTAklUMQ4wDAYDVQQIDAVJdGFseTEgMB4GA1UEBwwXU2FuIEdyZWdvcmlvIGRpIENhdGFuaWExDzANBgNVBAoMBlNpZWx0ZTAeFw0xNTEyMTQwODE0MTVaFw0yNTEyMTMwODE0MTVaMFAxCzAJBgNVBAYTAklUMQ4wDAYDVQQIDAVJdGFseTEgMB4GA1UEBwwXU2FuIEdyZWdvcmlvIGRpIENhdGFuaWExDzANBgNVBAoMBlNpZWx0ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANIRlOjM/tS9V9jYjJreqZSctuYriLfPTDgX2XdhWEbMpMpwA9p0bsbLQoC1gP0piLO+qbCsIh9+boPfb4/dLIA7E+Vmm5/+evOtzvjfHG4oXjZK6jo08QwkVV8Bm1jkakJPVZ57QFbyDSr+uBbIMY7CjA2LdgnIIwKN/kSfFhrZUMJ6ZxwegM100X5psfNPSV9WUtgHsvqlIlvydPo2rMm21sg+2d3Vtg8DthNSYRLqgazCc0NTsigrH7niSbJCO0nq/svMX2rSFdh5GFK7/pxT+c3OFWqIR8r+RX4qW+auJqkbTuNRwxV22Sm6r69ZJwV0WspvsVJi+FYqiyoWhgUCAwEAAaNQME4wHQYDVR0OBBYEFCUx063GwUhEFDllwCBe/+jdeW+XMB8GA1UdIwQYMBaAFCUx063GwUhEFDllwCBe/+jdeW+XMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBADF94c3JwyBM86QBLeoUZxRYKPniba8B39FfJk0pb+LejKfZMvspOrOFgYQQ9UrS8IFkBX9Xr7/tjRbr2cPwZNjrEZhoq+NfcE09bnaWTyEl1IEKK8TWOupJj9UNVpYXX0LfIRrMwNEzAPQykOaqPOnyHxOCPTY957xXSo3jXOyvugtvPHbd+iliAzUoPm1tgiTKWS+EkQ/e22eFv5NEyT+oHiKovrQ+voPWOIvJVMjiTyxRic8fEnI9zzV0SxWvFvty77wgcYbeEuFZa3iidhojUge8o1uY/JUyQjFxcvvfAgWSIZwdHiNyWaAgwzLPmPCPsvBdR3xrlcDg/9Bd3D0=',
+        ),
+        1 =>
+        array(
+            'encryption' => true,
+            'signing' => false,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIDczCCAlugAwIBAgIJAMsX0iEKQM6xMA0GCSqGSIb3DQEBCwUAMFAxCzAJBgNVBAYTAklUMQ4wDAYDVQQIDAVJdGFseTEgMB4GA1UEBwwXU2FuIEdyZWdvcmlvIGRpIENhdGFuaWExDzANBgNVBAoMBlNpZWx0ZTAeFw0xNTEyMTQwODE0MTVaFw0yNTEyMTMwODE0MTVaMFAxCzAJBgNVBAYTAklUMQ4wDAYDVQQIDAVJdGFseTEgMB4GA1UEBwwXU2FuIEdyZWdvcmlvIGRpIENhdGFuaWExDzANBgNVBAoMBlNpZWx0ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANIRlOjM/tS9V9jYjJreqZSctuYriLfPTDgX2XdhWEbMpMpwA9p0bsbLQoC1gP0piLO+qbCsIh9+boPfb4/dLIA7E+Vmm5/+evOtzvjfHG4oXjZK6jo08QwkVV8Bm1jkakJPVZ57QFbyDSr+uBbIMY7CjA2LdgnIIwKN/kSfFhrZUMJ6ZxwegM100X5psfNPSV9WUtgHsvqlIlvydPo2rMm21sg+2d3Vtg8DthNSYRLqgazCc0NTsigrH7niSbJCO0nq/svMX2rSFdh5GFK7/pxT+c3OFWqIR8r+RX4qW+auJqkbTuNRwxV22Sm6r69ZJwV0WspvsVJi+FYqiyoWhgUCAwEAAaNQME4wHQYDVR0OBBYEFCUx063GwUhEFDllwCBe/+jdeW+XMB8GA1UdIwQYMBaAFCUx063GwUhEFDllwCBe/+jdeW+XMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBADF94c3JwyBM86QBLeoUZxRYKPniba8B39FfJk0pb+LejKfZMvspOrOFgYQQ9UrS8IFkBX9Xr7/tjRbr2cPwZNjrEZhoq+NfcE09bnaWTyEl1IEKK8TWOupJj9UNVpYXX0LfIRrMwNEzAPQykOaqPOnyHxOCPTY957xXSo3jXOyvugtvPHbd+iliAzUoPm1tgiTKWS+EkQ/e22eFv5NEyT+oHiKovrQ+voPWOIvJVMjiTyxRic8fEnI9zzV0SxWvFvty77wgcYbeEuFZa3iidhojUge8o1uY/JUyQjFxcvvfAgWSIZwdHiNyWaAgwzLPmPCPsvBdR3xrlcDg/9Bd3D0=',
+        ),
+    ),
 );
-/*FINE SIELTE PROD*/
+/* FINE SIELTE PROD */
+
+
+/* INIZIO ARUBA PROD */
+$metadata['https://loginspid.aruba.it'] = array(
+    'entityid' => 'https://loginspid.aruba.it',
+    'description' =>
+    array(
+        'it' => 'ArubaPEC S.p.A.',
+    ),
+    'OrganizationName' =>
+    array(
+        'it' => 'ArubaPEC S.p.A.',
+    ),
+    'name' =>
+    array(
+        'it' => 'ArubaPEC S.p.A.',
+    ),
+    'OrganizationDisplayName' =>
+    array(
+        'it' => 'ArubaPEC S.p.A.',
+    ),
+    'url' =>
+    array(
+        'it' => 'https://www.pec.it/',
+    ),
+    'OrganizationURL' =>
+    array(
+        'it' => 'https://www.pec.it/',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://loginspid.aruba.it/ServiceLoginWelcome',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://loginspid.aruba.it/ServiceLoginWelcome',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://loginspid.aruba.it/ServiceLogoutRequest',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://loginspid.aruba.it/ServiceLogoutRequest',
+        ),
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIExTCCA62gAwIBAgIQIHtEvEhGM77HwqsuvSbi9zANBgkqhkiG9w0BAQsFADBsMQswCQYDVQQG
+EwJJVDEYMBYGA1UECgwPQXJ1YmFQRUMgUy5wLkEuMSEwHwYDVQQLDBhDZXJ0aWZpY2F0aW9uIEF1
+dGhvcml0eUIxIDAeBgNVBAMMF0FydWJhUEVDIFMucC5BLiBORyBDQSAyMB4XDTE3MDEyMzAwMDAw
+MFoXDTIwMDEyMzIzNTk1OVowgaAxCzAJBgNVBAYTAklUMRYwFAYDVQQKDA1BcnViYSBQRUMgc3Bh
+MREwDwYDVQQLDAhQcm9kb3R0bzEWMBQGA1UEAwwNcGVjLml0IHBlYy5pdDEZMBcGA1UEBRMQWFhY
+WFhYMDBYMDBYMDAwWDEPMA0GA1UEKgwGcGVjLml0MQ8wDQYDVQQEDAZwZWMuaXQxETAPBgNVBC4T
+CDE2MzQ1MzgzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqt2oHJhcp03l73p+QYpE
+J+f3jYYj0W0gos0RItZx/w4vpsiKBygaqDNVWSwfo1aPdVDIX13f62O+lBki29KTt+QWv5K6SGHD
+UXYPntRdEQlicIBh2Z0HfrM7fDl+xeJrMp1s4dsSQAuB5TJOlFZq7xCQuukytGWBTvjfcN/os5aE
+sEg+RbtZHJR26SbbUcIqWb27Swgj/9jwK+tvzLnP4w8FNvEOrNfR0XwTMNDFrwbOCuWgthv5jNBs
+VZaoqNwiA/MxYt+gTOMj/o5PWKk8Wpm6o/7/+lWAoxh0v8x9OkbIi+YaFpIxuCcUqsrJJk63x2gH
+Cc2nr+yclYUhsKD/AwIDAQABo4IBLDCCASgwDgYDVR0PAQH/BAQDAgeAMB0GA1UdDgQWBBTKQ3+N
+PGcXFk8nX994vMTVpba1EzBHBgNVHSAEQDA+MDwGCysGAQQBgegtAQEBMC0wKwYIKwYBBQUHAgEW
+H2h0dHBzOi8vY2EuYXJ1YmFwZWMuaXQvY3BzLmh0bWwwWAYDVR0fBFEwTzBNoEugSYZHaHR0cDov
+L2NybC5hcnViYXBlYy5pdC9BcnViYVBFQ1NwQUNlcnRpZmljYXRpb25BdXRob3JpdHlCL0xhdGVz
+dENSTC5jcmwwHwYDVR0jBBgwFoAU8v9jQBwRQv3M3/FZ9m7omYcxR3kwMwYIKwYBBQUHAQEEJzAl
+MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5hcnViYXBlYy5pdDANBgkqhkiG9w0BAQsFAAOCAQEA
+nEw0NuaspbpDjA5wggwFtfQydU6b3Bw2/KXPRKS2JoqGmx0SYKj+L17A2KUBa2c7gDtKXYz0FLT6
+0Bv0pmBN/oYCgVMEBJKqwRwdki9YjEBwyCZwNEx1kDAyyqFEVU9vw/OQfrAdp7MTbuZGFKknVt7b
+9wOYy/Op9FiUaTg6SuOy0ep+rqhihltYNAAl4L6fY45mHvqa5vvVG30OvLW/S4uvRYUXYwY6KhWv
+NdDf5CnFugnuEZtHJrVe4wx9aO5GvFLFZ/mQ35C5mXPQ7nIb0CDdLBJdz82nUoLSA5BUbeXAUkfa
+hW/hLxLdhks68/TK694xVIuiB40pvMmJwxIyDA==',
+        ),
+    ),
+);
+/* FINE ARUBA PROD */
+
+
+/* REGISTER ID */
+$metadata['https://spid.register.it'] = array(
+    'entityid' => 'https://spid.register.it',
+    'description' =>
+    array(
+        'it' => 'Register S.p.A.',
+    ),
+    'OrganizationName' =>
+    array(
+        'it' => 'Register S.p.A.',
+    ),
+    'name' =>
+    array(
+        'it' => 'Register S.p.A.',
+    ),
+    'OrganizationDisplayName' =>
+    array(
+        'it' => 'Register S.p.A.',
+    ),
+    'url' =>
+    array(
+        'it' => 'https//www.register.it',
+    ),
+    'OrganizationURL' =>
+    array(
+        'it' => 'https//www.register.it',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://spid.register.it/login/sso',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://spid.register.it/login/sso',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://spid.register.it/login/singleLogout',
+            'ResponseLocation' => 'https://spid.register.it/login/singleLogout/response',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://spid.register.it/login/singleLogout',
+            'ResponseLocation' => 'https://spid.register.it/login/singleLogout/response',
+        ),
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIDazCCAlOgAwIBAgIED8R+MDANBgkqhkiG9w0BAQsFADBmMQswCQYDVQQGEwJJVDELMAkGA1UECBMCRkkxETAPBgNVBAcTCGZsb3JlbmNlMREwDwYDVQQKEwhyZWdpc3RlcjERMA8GA1UECxMIcmVnaXN0ZXIxETAPBgNVBAMTCHJlZ2lzdGVyMB4XDTE3MDcxMDEwMzM0OVoXDTI3MDcwODEwMzM0OVowZjELMAkGA1UEBhMCSVQxCzAJBgNVBAgTAkZJMREwDwYDVQQHEwhmbG9yZW5jZTERMA8GA1UEChMIcmVnaXN0ZXIxETAPBgNVBAsTCHJlZ2lzdGVyMREwDwYDVQQDEwhyZWdpc3RlcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANkYXHbm3q6xt3wrLAXnytswtj2JE1MM8aYmNXkTgDMCwO/+ahQOoQru6IBTbjfWH9jr+Woy54FDdX6bHl+5/mO6l/yAB/bKgwe5HmUjZJ5oakJjWucsSm+VkEwN2HquBZoN+mktju00xvLX5VAjmDHvZc/b8NhNr/FRKlYITboygkhGiUwGI3wLf3IaB76J0o7ugpW2WNLcywpX+p1VWZAMCdHBveBe/e42hh6WnWPqdwYUWHOgJ8HX4IzCHifiS1n6eUMgtoTQOmSvTQDwSjD0WWJE8tWSYt+txXg1t+3A3tbZOFu7T442wE7DtMdUL4+8gimQS+e8PxDK1uTqIPUCAwEAAaMhMB8wHQYDVR0OBBYEFMCgo1gzCIcUThQIs5g5ikfv1D7eMA0GCSqGSIb3DQEBCwUAA4IBAQBnGw3i3hQ37L8vyelkyZMeO3tLK65Cqti4oVrQZxClGV5zNA6fIMDY8Mci1UhLwjzp29POd/sez0vuHZ/Vmmygzoye4jTKr6c3jAh0u81FTzefBU+vIietm9RuV3sd7D9xq6EqOY1NDL+rkvBcTFtiwLEUm2kHYu/U67jk73pxOtmqxQvQeMU8oi42tehMZGLIGp3U5lGS8YGGl+GtkkQ2Z5/PSm67HGP81kTArG/QX+bX+ykypTJVg9hfb9zOFQidp1HkCRIez6YhDiP/ZLurd6Grt/wVfZPNBO8EOgy25AkRZlp+UD686BFg7qq5KKEbz3qmPrj8deHL3duacZcp',
+        ),
+    ),
+);
+
+/* NAMIRIALT ID */
+$metadata['https://idp.namirialtsp.com/idp'] = array(
+    'entityid' => 'https://idp.namirialtsp.com/idp',
+    'description' =>
+    array(
+        'it' => 'Namirial',
+    ),
+    'OrganizationName' =>
+    array(
+        'it' => 'Namirial',
+    ),
+    'name' =>
+    array(
+        'it' => 'Namirial S.p.a. Trust Service Provider',
+    ),
+    'OrganizationDisplayName' =>
+    array(
+        'it' => 'Namirial S.p.a. Trust Service Provider',
+    ),
+    'url' =>
+    array(
+        'it' => 'https://www.namirialtsp.com',
+    ),
+    'OrganizationURL' =>
+    array(
+        'it' => 'https://www.namirialtsp.com',
+    ),
+    'contacts' =>
+    array(
+    ),
+    'metadata-set' => 'saml20-idp-remote',
+    'sign.authnrequest' => true,
+    'SingleSignOnService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://idp.namirialtsp.com/idp/profile/SAML2/POST/SSO',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://idp.namirialtsp.com/idp/profile/SAML2/Redirect/SSO',
+        ),
+    ),
+    'SingleLogoutService' =>
+    array(
+        0 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST',
+            'Location' => 'https://idp.namirialtsp.com/idp/profile/SAML2/POST/SLO',
+        ),
+        1 =>
+        array(
+            'Binding' => 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect',
+            'Location' => 'https://idp.namirialtsp.com/idp/profile/SAML2/Redirect/SLO',
+        ),
+    ),
+    'ArtifactResolutionService' =>
+    array(
+    ),
+    'NameIDFormats' =>
+    array(
+        0 => 'urn:oasis:names:tc:SAML:2.0:nameid-format:transient',
+    ),
+    'keys' =>
+    array(
+        0 =>
+        array(
+            'encryption' => false,
+            'signing' => true,
+            'type' => 'X509Certificate',
+            'X509Certificate' => 'MIIDNzCCAh+gAwIBAgIUNGvDUjTpLSPlP4sEfO0+JARITnEwDQYJKoZIhvcNAQEL
+BQAwHjEcMBoGA1UEAwwTaWRwLm5hbWlyaWFsdHNwLmNvbTAeFw0xNzAzMDgwOTE3
+NTZaFw0zNzAzMDgwOTE3NTZaMB4xHDAaBgNVBAMME2lkcC5uYW1pcmlhbHRzcC5j
+b20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrcJvYRh49nNijgzwL
+1OOwgzeMDUWcMSwoWdtMpx3kDhZwMFQ3ITDmNvlz21I0QKaP0BDg/UAjfCbDtLqU
+y6wHtI6NWVJoqIziw+dLfg7S5Sr2nOzJ/sKhzadWH1kDsetIenOLU2ex+7Vf/+4P
+7nIrS0c+xghi9/zN8dH6+09wWYnloGmcW3qWRFMKJjR3ctBmsmqCKWNIIq2QfeFs
+zSSeG0xaNlLKBrj6TyPDxDqPAskq038W1fCuh7aejCk7XTTOxuuIwDGJiYsc8rfX
+SG9/auskAfCziGEm304/ojy5MRcNjekz4KgWxT9anMCipv0I2T7tCAivc1z9QCsE
+Pk5pAgMBAAGjbTBrMB0GA1UdDgQWBBQi8+cnv0Nw0lbuICzxlSHsvBw5SzBKBgNV
+HREEQzBBghNpZHAubmFtaXJpYWx0c3AuY29thipodHRwczovL2lkcC5uYW1pcmlh
+bHRzcC5jb20vaWRwL3NoaWJib2xldGgwDQYJKoZIhvcNAQELBQADggEBAEp953KM
+WY7wJbJqnPTmDkXaZJVoubcjW86IY494RgVBeZ4XzAGOifa3ScDK6a0OWfIlRTba
+KKu9lEVw9zs54vLp9oQI4JulomSaL805Glml4bYqtcLoh5qTnKaWp5qvzBgcQ7i2
+GcDC9F+qrsJYreCA7rbHXzF0hu5yIfz0BrrCRWvuWiop92WeKvtucI4oBGfoHhYO
+ZsLuoTT3hZiEFJT60xS5Y2SNdz+Eia9Dgt0cvAzoOVk93Cxg+XBdyyEEiZn/zvhj
+us29KyFrzh3XYznh+4jq3ymt7Os4JKmY0aJm7yNxw+LyPjkdaB0icfo3+hD7PiuU
+jC3Y67LUWQ8YgOc=',
+        ),
+    ),
+);
