@@ -1,7 +1,6 @@
 .gitignore
 /log/
 /config/
-/metadata/
 /cert/
 
 !config/.gitkeep
